@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.ActorModel", "Game.ActorModel\Game.ActorModel.csproj", "{429FB79C-4465-4673-BD42-70E59523CA98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Web", "Game.Web\Game.Web.csproj", "{2A907A39-9256-4472-96F8-6C0DFD53DEE5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{429FB79C-4465-4673-BD42-70E59523CA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429FB79C-4465-4673-BD42-70E59523CA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429FB79C-4465-4673-BD42-70E59523CA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429FB79C-4465-4673-BD42-70E59523CA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A907A39-9256-4472-96F8-6C0DFD53DEE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A907A39-9256-4472-96F8-6C0DFD53DEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A907A39-9256-4472-96F8-6C0DFD53DEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A907A39-9256-4472-96F8-6C0DFD53DEE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
