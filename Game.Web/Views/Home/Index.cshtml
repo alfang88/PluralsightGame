@@ -25,3 +25,20 @@
     
     TODO: List all other players
 </div>
+
+@section scripts
+{
+    <script>
+        var gameHub = $.connection.gameHub;
+
+        gameHub.client.playerJoined = function (playerName, health) {
+            // todo
+        }
+
+        gameHub.client.updatePlayerHealth = function (playerName, health) {
+            // todo
+        }
+
+        $.connection.hub.start();
+    </script>
+}
