@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Akka.Actor;
 using Game.ActorModel.Messages;
 
@@ -23,6 +24,7 @@ namespace Game.ActorModel.Actors
 
         private void JoinGame(JoinGameMessage message)
         {
+            Console.WriteLine($"Player {message.PlayerName} attemtping to jin...");
             var playerNeedsCreating = !_players.ContainsKey(message.PlayerName);
 
             if (!playerNeedsCreating)

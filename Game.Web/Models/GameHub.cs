@@ -1,4 +1,5 @@
-﻿using Akka.Actor;
+﻿using System;
+using Akka.Actor;
 using Game.ActorModel.Messages;
 using Microsoft.AspNet.SignalR;
 
@@ -8,6 +9,7 @@ namespace Game.Web.Models
     {
         public void JoinGame(string playerName)
         {
+            Console.WriteLine($"Player {playerName} attempting to join in...");
             GameActorSystem
                 .ActorReferences
                 .SignalRBridge

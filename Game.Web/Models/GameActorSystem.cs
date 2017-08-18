@@ -31,8 +31,8 @@ namespace Game.Web.Models
         }
 
         private static async Task AsyncShutdown()
-        { 
-            await _actorSystem.WhenTerminated;
+        {
+            await _actorSystem.Terminate();
             Console.WriteLine("ActorSystem terminated...");
         }
 

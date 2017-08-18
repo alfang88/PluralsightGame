@@ -20,7 +20,7 @@ namespace Game.ActorModel.Actors
                     Sender.Tell(new PlayerHealthChangedMessage(_playerName, _health));
                 });
 
-            Receive<PlayerStatusMessage>(
+            Receive<RefreshPlayerStatusMessage>(
                 message =>
                 {
                     Sender.Tell(new PlayerStatusMessage(_playerName, _health));
